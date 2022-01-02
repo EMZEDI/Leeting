@@ -22,7 +22,7 @@ public class Solu {
                 min_height = height[reverse];
                 mokMinH = height[reverse];
             }
-            else if (height[start] < height[reverse]){
+            else{
                 min_height = height[start];
                 mokMinH = height[start];
             }
@@ -33,7 +33,7 @@ public class Solu {
                 if (height[mokStart] > height[mokRev]){
                     mokMinH = height[mokRev];
                 }
-                else if (height[mokStart] < height[mokRev]){
+                else{
                     mokMinH = height[mokStart];
                 }
                 // now if the mokarea with the new stuff is greater than the last one, do the change
@@ -49,6 +49,6 @@ public class Solu {
     }
 
     public static void main(String[] args) {
-        System.out.println(maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
+        System.out.println(maxArea(new int[]{1, 1}));
     }
 }
