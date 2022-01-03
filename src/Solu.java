@@ -1,7 +1,10 @@
 public class Solu {
     public static int maxArea(int[] height) {
-        // we are given a list and we have to iterate backwards to find the maximum surface area there
-        //TODO: you have to create the endpoints validation. now we are assuming that the list has 2 or more elements
+        /*
+         tha answer to https://leetcode.com/problems/container-with-most-water/
+         we are given a list and we have to iterate backwards to find the maximum surface area there
+        TODO: you have to create the endpoints validation. now we are assuming that the list has 2 or more elements
+        */
 
         int min_height = 0;
         int width = 0;
@@ -48,7 +51,4 @@ public class Solu {
         return area;
     }
 
-    public static void main(String[] args) {
-        System.out.println(maxArea(new int[]{1, 1}));
-    }
 }
